@@ -12,8 +12,8 @@
                                       +-----(查询)-->查询数据---->返回数据
     ```
     其中，任意一个步骤发生错误将返回。
-    
- 2. [API设计](./docs/index.md)
+
+2. [API设计](./docs/index.md)
     
 # 许可
 MPL v. 2. See [LICENSE](./LICENSE).
