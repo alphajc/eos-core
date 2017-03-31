@@ -6,4 +6,4 @@
 将加密文件解密到制定的cache中
 
 ## 上传文件（PUT /files）
-将cache中的文件加密到文件区中，并删除cache
+将cache中的文件加密到文件区中
