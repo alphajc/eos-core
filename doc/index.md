@@ -8,5 +8,5 @@
 2. 单个下载（GET /files/:uuid）
 
 
-## 上传文件（PUT /files）
+## 上传文件（POST /files）
 将cache中的文件加密到文件区中
