@@ -13,7 +13,7 @@
     ```
     其中，任意一个步骤发生错误将返回。
     
- 2. [API设计](./doc/INDEX.md)
+ 2. [API设计](./doc/index.md)
     
 # 许可
 MPL v. 2. See [LICENSE](./LICENSE).
