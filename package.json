@@ -8,5 +8,14 @@
     "type": "git"
   },
   "author": "Gavin Chan<gavinchan267@gmail.com>",
-  "license": "MPL-2.0"
+  "license": "MPL-2.0",
+  "dependencies": {
+    "bunyan": "^1.8.9",
+    "restify": "^4.3.0",
+    "sigyan": "^0.2.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+
 }
