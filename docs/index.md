@@ -32,17 +32,21 @@
     
 ## 下载文件
 将加密文件解密到制定的cache中
+
 1. 批量下载（GET /files）
-    * 输出：
+
+   * 输出：
      ```json
      [{"uuid":"uuid","path":"path"}]
      ```
+
      参数名 | 描述
      ------|-----
      uuid  | 文件标识
      path  | 文件缓存路径
 
 2. 单个下载（GET /files/:uuid）
+
     * 输出：
      ```json
      {"uuid":"uuid","path":"path"}
@@ -54,6 +58,7 @@
   
 ## 上传文件（POST /files）
 将cache中的文件加密到文件区中
+
 * 输入：
 
   参数名     | 是否必需 | 描述
