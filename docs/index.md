@@ -13,7 +13,6 @@
     [{
       "uuid":"uuid",
       "filename":"filename",
-      "extname": "ext_name",
       "uploaded_by":"username",
       "size":0,
       "type":"type",
@@ -26,8 +25,7 @@
     -------------|----
     uuid          | 文件uuid
     filename      | 文件名
-    extname       | 扩展名
-    size          | 文件大小，单位KB<br>
+    size          | 文件大小，单位：字节<br>
     type          | [文件类型](https://zh.wikipedia.org/wiki/Category:%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F)
     visibility    | 文件可见性，取值为“public”和“owner”
     uploaded_by   | 上传的人
@@ -79,7 +77,6 @@
     [{
       "uuid":"uuid",
       "filename":"filename",
-      "extname": "ext_name",
       "uploaded_by":"owner_uuid",
       "size":0,
       "type":"type",
@@ -92,7 +89,6 @@
     -------------|----
     uuid          | 文件uuid
     filename      | 文件名
-    extname       | 扩展名
     size          | 文件大小，单位KB<br>
     type          | [文件类型](https://zh.wikipedia.org/wiki/Category:%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F)
     visibility    | 文件可见性，取值为“public”和“owner”
