@@ -33,7 +33,7 @@ var core = require('./lib/core').createServer({
 });
 
 core.listen(function ready() {
-    log.info('Ready to rock!');
+    log.info('开始监听！');
 });
 
 process.on('uncaughtException', function preventOtherError(e) {
