@@ -21,7 +21,14 @@ var cfg = loadConfig(cfgFile);
 var log = require('bunyan').createLogger({
     name: 'core',
     level: process.env.LOG || cfg.logLevel || 'info',
-    serializers: restify.bunyan.serializers
+    serializers: restify.bunyan.serializers,
+    streams:[ {
+        level: 'info',
+        stream: process.stdout
+    },{
+        path:'./log/fatal.log',
+        level: 'fatal'
+    }]
 });
 
 

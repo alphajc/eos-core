@@ -1,5 +1,8 @@
 {
   "host": "0.0.0.0",
   "port": 5267,
-  "logLevel": "debug"
+  "logLevel": "debug",
+  "storage": "A:\\Tasks\\eos-core\\data",
+  "password": "morenmima",
+  "timezone": "Asia/Shanghai"
 }
