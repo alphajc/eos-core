@@ -4,5 +4,13 @@
   "logLevel": "debug",
   "storage": "A:\\Tasks\\eos-core\\data",
   "password": "morenmima",
-  "timezone": "Asia/Shanghai"
+  "postgres": {
+    "host": "10.9.5.23",
+    "port": 5432,
+    "database": "saves",
+    "user": "postgres",
+    "password": "chen1399",
+    "max": 10,
+    "idleTimeoutMillis": 30000
+  }
 }

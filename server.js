@@ -1,24 +1,24 @@
 /**
  * Created by gavin on 17-4-3.
  */
-var path = require('path');
-var assert = require('assert');
-var fs = require('fs');
-var restify = require('restify');
+const path = require('path');
+const assert = require('assert');
+const fs = require('fs');
+const restify = require('restify');
 
 
 function loadConfig(file) {
     assert.ok(file);
 
-    var _f = fs.readFileSync(file, 'utf8');
+    const _f = fs.readFileSync(file, 'utf8');
     return JSON.parse(_f);
 }
 
 
-var cfgFile = path.join(__dirname, '/etc/config.json');
-var cfg = loadConfig(cfgFile);
+const cfgFile = path.join(__dirname, '/etc/config.json');
+const cfg = loadConfig(cfgFile);
 
-var log = require('bunyan').createLogger({
+const log = require('bunyan').createLogger({
     name: 'core',
     level: process.env.LOG || cfg.logLevel || 'info',
     serializers: restify.bunyan.serializers,
@@ -31,9 +31,10 @@ var log = require('bunyan').createLogger({
     }]
 });
 
+require('./lib/db').createPGPool({config:cfg.postgres, log:log});
 
 log.info('初始化CORE');
-var core = require('./lib/core').createServer({
+const core = require('./lib/core').createServer({
     config: cfg,
     log: log,
     version: require('./package.json').version
@@ -47,5 +48,5 @@ process.on('uncaughtException', function preventOtherError(e) {
     log.fatal(e, '未捕获的异常');
 });
 // Increase/decrease loggers levels using SIGUSR2/SIGUSR1:
-var sigyan = require('sigyan');
+const sigyan = require('sigyan');
 sigyan.add([log]);
