@@ -2,7 +2,7 @@
   "host": "0.0.0.0",
   "port": 5267,
   "logLevel": "debug",
-  "storage": "/home/gavin/saves/eos-core/data",
+  "data_area": "/home/gavin/saves/eos-core/data",
   "password": "morenmima",
   "postgres": {
     "host": "10.9.5.23",
