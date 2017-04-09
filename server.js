@@ -27,7 +27,7 @@ const log = require('bunyan').createLogger({
         stream: process.stdout
     },{
         path:'./log/fatal.log',
-        level: 'fatal'
+        level: 'error'
     }]
 });
 
