@@ -31,24 +31,11 @@
     uploaded_by   | 上传的人
     last_modify   | 最后修改
     
-## 下载文件
+## 下载文件（GET /files/:uuid）
 将加密文件解密到制定的cache中
 
-1. 批量下载（GET /files）
+* 输出：
 
-   * 输出：
-     ```json
-     [{"uuid":"uuid","path":"path"}]
-     ```
-
-     参数名 | 描述
-     ------|-----
-     uuid  | 文件标识
-     path  | 文件缓存路径
-
-2. 单个下载（GET /files/:uuid）
-
-    * 输出：
      ```json
      {"uuid":"uuid","path":"path"}
      ```
