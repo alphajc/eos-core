@@ -51,8 +51,8 @@
 
   参数名       | 是否必需 | 描述
   ------------|:-------:|------
-  path        |   是    | 当前登录用户，默认全部owner
-  originalname|   是    | 原始文件名
+  path        |   是    | 缓存路径
+  originalname|   是    | 原始文件名
   type        |   否    | [文件类型](https://zh.wikipedia.org/wiki/Category:%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F)
   visibility  |   否    | 默认public
   uploaded_by |   是    | 上传者的uuid
