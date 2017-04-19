@@ -1,6 +1,6 @@
 {
   "name": "eos-core",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "为adminui或其他程序提供可调用api",
   "main": "index.js",
   "repository": {
